@@ -3,33 +3,36 @@ package zoopla.uk.stefdefination;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import zoopla.uk.baseclass.SuperClass;
+import zoopla.uk.pagefactory.MasterFageFactory;
 
-public class LoginStefDefination {
+public class LoginStefDefination extends SuperClass{
 
-	WebDriver driver;
+	
+	MasterFageFactory pf;
 	
 	@Given("^As a user able to open any browser$")
-	public void as_a_user_able_to_open_any_browser()  {
-		
-		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
-		driver = new ChromeDriver();
-		
+	public void as_a_user_able_to_open_any_browser()  {	
+		SuperClass.initalization();
 	}
 
 	@Given("^As a user able to enter URL$")
-	public void as_a_user_able_to_enter_URL()  {	
+	public void as_a_user_able_to_enter_URL()  {
+		
 	  driver.get("https://www.zoopla.co.uk/");
 	  driver.manage().window().maximize();
 	}
 
 	@When("^As a user i can click on signin button$")
-	public void as_a_user_i_can_click_on_signin_button()  {
-	 driver.findElement(By.xpath("//*[@id=\"cookie-consent-form\"]/div/div/div/button[2]")).click();
-	driver.findElement(By.xpath("//*[@id=\"bhome\"]/div[2]/div/div/div/header/div/div/div[1]/div/ul/li[4]/a")).click();
+	public void as_a_user_i_can_click_on_signin_button()  {	
+		pf = PageFactory.initElements(driver, MasterFageFactory.class);
+	    pf.getAccepetCookis().click();
+	    pf.getclickOnsigninbutton().click();
 	}
 
 	@When("^As a user i can enter username & password$")

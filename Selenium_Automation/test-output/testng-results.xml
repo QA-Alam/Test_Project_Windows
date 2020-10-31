@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19951" started-at="2020-10-31T22:59:54Z" finished-at="2020-10-31T23:00:14Z">
+  <suite name="Default suite" duration-ms="12585" started-at="2020-10-31T23:37:32Z" finished-at="2020-10-31T23:37:44Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="19951" started-at="2020-10-31T22:59:54Z" finished-at="2020-10-31T23:00:14Z">
+    <test name="Default test" duration-ms="12585" started-at="2020-10-31T23:37:32Z" finished-at="2020-10-31T23:37:44Z">
       <class name="zoopla.uk.my.runner.MyRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="setUpClass" is-config="true" duration-ms="161" started-at="2020-10-31T22:59:54Z" finished-at="2020-10-31T22:59:54Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="setUpClass" is-config="true" duration-ms="193" started-at="2020-10-31T23:37:32Z" finished-at="2020-10-31T23:37:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="feature" duration-ms="19714" started-at="2020-10-31T22:59:55Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-10-31T23:00:14Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="feature" duration-ms="12290" started-at="2020-10-31T23:37:32Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-10-31T23:37:44Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="tearDownClass" is-config="true" duration-ms="3" started-at="2020-10-31T23:00:14Z" finished-at="2020-10-31T23:00:14Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:zoopla.uk.my.runner.MyRunner@1d296da]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2020-10-31T23:37:44Z" finished-at="2020-10-31T23:37:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
