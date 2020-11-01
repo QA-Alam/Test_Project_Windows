@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
 <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.test.skip>true</maven.test.skip>
+		<maven.test.skip>false</maven.test.skip>
 	</properties>
 	<build>
 		<plugins>
@@ -22,8 +22,8 @@
 						</goals>
 						<configuration>
 							<projectName>cucumber-jvm-example</projectName>
-							<outputDirectory>${project.build.directory}/Advance-cucumber-reports</outputDirectory>
-							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+							<outputDirectory>${project.build.directory}/goutham-cucumber-reports</outputDirectory>
+							<cucumberOutput>${project.build.directory}/cucumber-reports</cucumberOutput>
 						</configuration>
 					</execution>
 				</executions>
