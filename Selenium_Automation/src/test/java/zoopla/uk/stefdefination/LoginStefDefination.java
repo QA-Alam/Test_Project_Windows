@@ -1,10 +1,7 @@
 package zoopla.uk.stefdefination;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -12,7 +9,6 @@ import zoopla.uk.baseclass.SuperClass;
 import zoopla.uk.pagefactory.MasterFageFactory;
 
 public class LoginStefDefination extends SuperClass{
-
 	
 	MasterFageFactory pf;
 	
