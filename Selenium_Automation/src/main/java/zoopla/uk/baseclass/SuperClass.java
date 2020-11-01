@@ -7,7 +7,7 @@ public class SuperClass {
    public static WebDriver driver;
 	
 	public static void initalization() {
-		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}
