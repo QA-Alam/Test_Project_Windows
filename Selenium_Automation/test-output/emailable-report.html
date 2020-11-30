@@ -8,12 +8,50 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">70,911</td><td></td><td></td></tr>
+<tr><th colspan="8">Test suite</th></tr>
+<tr><td><a href="#t0">Chrome Browser</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,388</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefox Browser</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,840</td><td></td><td></td></tr>
+<tr><td><a href="#t2">edge Browser</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,182</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">ie Browser</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,092</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">68,502</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">zoopla.uk.my.runner.OutlineRunner</td><td><a href="#m0">feature</a></td><td rowspan="2">1606000914856</td><td rowspan="2">21610</td></tr><tr class="passedeven"><td><a href="#m1">feature</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Browser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.usa.testNG.CrossBrowserTesting</td><td><a href="#m0">browserTesting</a></td><td rowspan="1">1606597847226</td><td rowspan="1">3959</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefox Browser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.usa.testNG.CrossBrowserTesting</td><td><a href="#m1">browserTesting</a></td><td rowspan="1">1606597882000</td><td rowspan="1">6112</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">edge Browser &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.usa.testNG.CrossBrowserTesting</td><td><a href="#m2">browserSetup</a></td><td rowspan="1">1606597888118</td><td rowspan="1">1165</td></tr><tr><th colspan="4">edge Browser &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.usa.testNG.CrossBrowserTesting</td><td><a href="#m3">browserTesting</a></td><td rowspan="1">1606597889294</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">ie Browser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.usa.testNG.CrossBrowserTesting</td><td><a href="#m4">browserTesting</a></td><td rowspan="1">1606597896906</td><td rowspan="1">13501</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">zoopla.uk.my.runner.OutlineRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Zoopla users can buy the property &amp; sell the property</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">zoopla.uk.my.runner.OutlineRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login function validations</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome Browser</h2><h3 id="m0">com.usa.testNG.CrossBrowserTesting#browserTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefox Browser</h2><h3 id="m1">com.usa.testNG.CrossBrowserTesting#browserTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>edge Browser</h2><h3 id="m2">com.usa.testNG.CrossBrowserTesting#browserSetup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LAPTOP-U35LVRD0&apos;, ip: &apos;192.168.0.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at com.usa.testNG.CrossBrowserTesting.browserSetup(CrossBrowserTesting.java:44)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.usa.testNG.CrossBrowserTesting#browserTesting</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LAPTOP-U35LVRD0&apos;, ip: &apos;192.168.0.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at com.usa.testNG.CrossBrowserTesting.browserSetup(CrossBrowserTesting.java:44)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ie Browser</h2><h3 id="m4">com.usa.testNG.CrossBrowserTesting#browserTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

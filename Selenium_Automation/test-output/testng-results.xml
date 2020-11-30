@@ -1,46 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-21T18:21:54 EST" name="Default suite" finished-at="2020-11-21T18:23:05 EST" duration-ms="70911">
+  <suite started-at="2020-11-28T16:10:41 EST" name="Test suite" finished-at="2020-11-28T16:11:50 EST" duration-ms="68602">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:zoopla.uk.my.runner.OutlineRunner@302c971f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-11-21T18:21:54 EST" name="Default test" finished-at="2020-11-21T18:23:05 EST" duration-ms="70911">
-      <class name="zoopla.uk.my.runner.OutlineRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:zoopla.uk.my.runner.OutlineRunner@302c971f]" started-at="2020-11-21T18:21:54 EST" name="setUpClass" finished-at="2020-11-21T18:21:54 EST" duration-ms="224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:zoopla.uk.my.runner.OutlineRunner@302c971f]" started-at="2020-11-21T18:21:54 EST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-11-21T18:22:16 EST" duration-ms="21610" status="PASS">
+    <test started-at="2020-11-28T16:10:41 EST" name="Chrome Browser" finished-at="2020-11-28T16:10:51 EST" duration-ms="9388">
+      <class name="com.usa.testNG.CrossBrowserTesting">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.usa.testNG.CrossBrowserTesting@31ea9581]" started-at="2020-11-28T16:10:41 EST" name="browserSetup" finished-at="2020-11-28T16:10:47 EST" duration-ms="5400" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Zoopla users can buy the property & sell the property]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:zoopla.uk.my.runner.OutlineRunner@302c971f]" started-at="2020-11-21T18:22:16 EST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-11-21T18:23:05 EST" duration-ms="48931" status="PASS">
+        </test-method> <!-- browserSetup -->
+        <test-method signature="browserTesting()[pri:0, instance:com.usa.testNG.CrossBrowserTesting@31ea9581]" started-at="2020-11-28T16:10:47 EST" name="browserTesting" finished-at="2020-11-28T16:10:51 EST" duration-ms="3959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTesting -->
+      </class> <!-- com.usa.testNG.CrossBrowserTesting -->
+    </test> <!-- Chrome Browser -->
+    <test started-at="2020-11-28T16:10:51 EST" name="firefox Browser" finished-at="2020-11-28T16:11:28 EST" duration-ms="36840">
+      <class name="com.usa.testNG.CrossBrowserTesting">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.usa.testNG.CrossBrowserTesting@28dcca0c]" started-at="2020-11-28T16:10:51 EST" name="browserSetup" finished-at="2020-11-28T16:11:21 EST" duration-ms="30725" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Login function validations]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:zoopla.uk.my.runner.OutlineRunner@302c971f]" started-at="2020-11-21T18:23:05 EST" name="tearDownClass" finished-at="2020-11-21T18:23:05 EST" duration-ms="10" status="PASS">
+        </test-method> <!-- browserSetup -->
+        <test-method signature="browserTesting()[pri:0, instance:com.usa.testNG.CrossBrowserTesting@28dcca0c]" started-at="2020-11-28T16:11:22 EST" name="browserTesting" finished-at="2020-11-28T16:11:28 EST" duration-ms="6112" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- zoopla.uk.my.runner.OutlineRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- browserTesting -->
+      </class> <!-- com.usa.testNG.CrossBrowserTesting -->
+    </test> <!-- firefox Browser -->
+    <test started-at="2020-11-28T16:11:28 EST" name="edge Browser" finished-at="2020-11-28T16:11:29 EST" duration-ms="1182">
+      <class name="com.usa.testNG.CrossBrowserTesting">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.usa.testNG.CrossBrowserTesting@312aa7c]" started-at="2020-11-28T16:11:28 EST" name="browserSetup" finished-at="2020-11-28T16:11:29 EST" duration-ms="1165" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: Unknown error
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-U35LVRD0', ip: '192.168.0.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: EdgeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-U35LVRD0', ip: '192.168.0.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.usa.testNG.CrossBrowserTesting.browserSetup(CrossBrowserTesting.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="browserTesting()[pri:0, instance:com.usa.testNG.CrossBrowserTesting@312aa7c]" started-at="2020-11-28T16:11:29 EST" name="browserTesting" finished-at="2020-11-28T16:11:29 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: Unknown error
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-U35LVRD0', ip: '192.168.0.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: EdgeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: Unknown error
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-U35LVRD0', ip: '192.168.0.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+at com.usa.testNG.CrossBrowserTesting.browserSetup(CrossBrowserTesting.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTesting -->
+      </class> <!-- com.usa.testNG.CrossBrowserTesting -->
+    </test> <!-- edge Browser -->
+    <test started-at="2020-11-28T16:11:29 EST" name="ie Browser" finished-at="2020-11-28T16:11:50 EST" duration-ms="21092">
+      <class name="com.usa.testNG.CrossBrowserTesting">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.usa.testNG.CrossBrowserTesting@6c4906d3]" started-at="2020-11-28T16:11:29 EST" name="browserSetup" finished-at="2020-11-28T16:11:36 EST" duration-ms="7588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="browserTesting()[pri:0, instance:com.usa.testNG.CrossBrowserTesting@6c4906d3]" started-at="2020-11-28T16:11:36 EST" name="browserTesting" finished-at="2020-11-28T16:11:50 EST" duration-ms="13501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTesting -->
+      </class> <!-- com.usa.testNG.CrossBrowserTesting -->
+    </test> <!-- ie Browser -->
+  </suite> <!-- Test suite -->
 </testng-results>

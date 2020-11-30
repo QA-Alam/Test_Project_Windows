@@ -18,10 +18,11 @@ import zoopla.uk.baseclass.SuperClass;
 public class Utility extends SuperClass {
 
 	public static void waitForElement(WebElement elem) {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(elem));
 		
 	}
+	
 	public static String getScreenShot(WebDriver driver, String name) throws IOException {
 		String date = new  SimpleDateFormat("MM.dd.yyyy-hh.mm.ss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
